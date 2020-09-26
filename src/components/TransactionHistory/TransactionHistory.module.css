@@ -1,0 +1,59 @@
+section,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+td,
+th {
+  border-collapse: collapse;
+  border-right: solid 0.1px #e0e6e7;
+}
+
+td:last-child,
+th:last-child {
+  border-right: 0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.transactionHistory {
+  border: 1px solid #ccc;
+  border-spacing: 0;
+  width: 831px;
+  text-align: center;
+}
+
+.headRow {
+  height: 40px;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #00bcd4;
+}
+
+.row {
+  composes: headRow;
+  font-size: 12px;
+  text-transform: none;
+  color: #75808a;
+  background-color: #fff;
+}
+
+.rowTitle::first-letter {
+  text-transform: uppercase;
+}
+
+.row:nth-child(2n) {
+  background-color: #ecf2f3;
+}

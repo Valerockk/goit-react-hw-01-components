@@ -35,6 +35,7 @@ li {
 
 .avatar {
   border-radius: 100px;
+  height: 100px;
 }
 .name {
   padding-top: 10px;
